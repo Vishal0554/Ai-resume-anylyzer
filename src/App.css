@@ -1,0 +1,178 @@
+/* Full page background styling with auto-fit image */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("/background.jpg") no-repeat center center;
+  background-size: cover; /* Ensures image fits the screen */
+  background-attachment: fixed; /* Keeps background fixed while scrolling */
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 50, 0.6); /* Bluish tint with transparency */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Centering the main box */
+.container {
+  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header Styling */
+.header {
+  width: 100%;
+  background: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header h2 {
+  color: #007bff;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.footer span {
+  color: black;
+  font-weight: bold;
+}
+
+/* Header Title */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Upload section styling */
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* File input styling */
+.file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+}
+
+.file-label input {
+  display: none;
+}
+
+.icon {
+  color: #007bff;
+}
+
+/* Button styling */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+}
+
+/* Result & Feedback Sections */
+.result, .feedback {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Selection Probability Styling */
+.probability {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
